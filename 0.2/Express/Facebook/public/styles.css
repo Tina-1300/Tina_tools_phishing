@@ -1,0 +1,156 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Image de la bannière */
+.ban {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ban img {
+    max-width: 50%;
+    max-height: 100px;
+    height: auto;
+}
+
+/* Conteneur du formulaire */
+.container {
+    background-color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Titre */
+.titre {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Style des champs de formulaire */
+input[type="text"],
+input[type="password"] {
+    font-family: inherit;
+    font-size: 17px;
+    width: calc(100% - 40px);
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style du lien "Informations de compte oubliées" */
+._97w4 {
+    color: #1877f2;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Bouton de soumission */
+button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.f{
+    width: calc(100% - 140px);
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 568px) {
+    .ban img {
+        max-width: 70%;
+        max-height: 80px;
+    }
+
+    .container {
+        padding: 20px 10px;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    button,
+    input[type="text"],
+    input[type="password"]{
+        width: 90%;
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .ban img {
+        max-width: 80%;
+        max-height: 60px;
+    }
+
+    .titre {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Trait horizontal avec "ou" centré */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 5;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.divider span {
+    font-size: 14px;
+    color: #666;
+}
